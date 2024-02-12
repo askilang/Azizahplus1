@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap');
+
+* {
+    font-family: 'Amatic SC', cursive;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    color: azure;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    text-align: center;
+}
+
+.greetings {
+    font-size: 6rem;
+    font-weight: 1100;
+    text-align: center;
+}
+
+.greetings > span {
+    animation: glow 2.8s ease-in-out infinite;
+}
+
+.greetings > span:nth-child(1) {
+    animation-delay: .2s;
+}
+
+.greetings > span:nth-child(2) {
+    animation-delay: .4s;
+}
+
+.greetings > span:nth-child(3) {
+    animation-delay: .6s;
+}
+
+.greetings > span:nth-child(4) {
+    animation-delay: .8s;
+}
+
+.greetings > span:nth-child(5) {
+    animation-delay: 1s; /* Menyesuaikan penundaan untuk huruf B */
+}
+
+.greetings > span:nth-child(6) {
+    animation-delay: 1.2s; /* Menyesuaikan penundaan untuk huruf i */
+}
+
+.greetings > span:nth-child(7) {
+    animation-delay: 1.4s; /* Menyesuaikan penundaan untuk huruf r */
+}
+
+.greetings > span:nth-child(8) {
+    animation-delay: 1.6s; /* Menyesuaikan penundaan untuk huruf t */
+}
+
+.greetings > span:nth-child(9) {
+    animation-delay: 1.8s; /* Menyesuaikan penundaan untuk huruf h */
+}
+
+.greetings > span:nth-child(10) {
+    animation-delay: 2s; /* Menyesuaikan penundaan untuk huruf D */
+}
+
+.greetings > span:nth-child(11) {
+    animation-delay: 2.2s; /* Menyesuaikan penundaan untuk huruf a */
+}
+
+.greetings > span:nth-child(12) {
+    animation-delay: 2.4s; /* Menyesuaikan penundaan untuk huruf y */
+}
+
+.spacer {
+    margin-left: 10px;
+}
+
+.description {
+    margin-top: 20px;
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.button {
+    margin-top: 5px;
+}
+
+.button a {
+    text-decoration: none;
+    font-size: 1.2rem;
+    color: #413838;
+}
+
+@media screen and (max-width: 574px) {
+    .greetings {
+        display: block;
+        font-size: 3rem;
+        font-weight: 500;
+        text-align: center;
+    }
+    .description {
+        font-size: 1rem;
+    }
+
+    .button a {
+        font-size: .5rem;
+    }
+}
+
+@keyframes glow {
+    0%, 100% {
+        color: #fff;
+        text-shadow: 0 0 20px #39c6d6, 0 0 30px #39c6d6, 0 0 40px #39c6d6, 0 0 50px #39c6d6, 0 0 60px #39c6d6, 0 0 70px #39c6d6, 0 0 80px #39c6d6;
+    }
+    10%, 90% {
+        color: #111;
+        text-shadow: none;
+    }
+    20% {
+        color: #ffff00; /* Warna kuning */
+        text-shadow: 0 0 20px #ffff00, 0 0 30px #ffff00, 0 0 40px #ffff00, 0 0 50px #ffff00, 0 0 60px #ffff00, 0 0 70px #ffff00, 0 0 80px #ffff00;
+    }
+    30% {
+        color: #00ff00; /* Warna hijau */
+        text-shadow: 0 0 20px #00ff00, 0 0 30px #00ff00, 0 0 40px #00ff00, 0 0 50px #00ff00, 0 0 60px #00ff00, 0 0 70px #00ff00, 0 0 80px #00ff00;
+    }
+    40% {
+        color: #00ffff; /* Warna cyan */
+        text-shadow: 0 0 20px #00ffff, 0 0 30px #00ffff, 0 0 40px #00ffff, 0 0 50px #00ffff, 0 0 60px #00ffff, 0 0 70px #00ffff, 0 0 80px #00ffff;
+    }
+    50% {
+        color: #0000ff; /* Warna biru */
+        text-shadow: 0 0 20px #0000ff, 0 0 30px #0000ff, 0 0 40px #0000ff, 0 0 50px #0000ff, 0 0 60px #0000ff, 0 0 70px #0000ff, 0 0 80px #0000ff;
+    }
+    60% {
+        color: #8000ff; /* Warna ungu */
+        text-shadow: 0 0 20px #8000ff, 0 0 30px #8000ff, 0 0 40px #8000ff, 0 0 50px #8000ff, 0 0 60px #8000ff, 0 0 70px #8000ff, 0 0 80px #8000ff;
+    }
+    70% {
+        color: #ff00ff; /* Warna magenta */
+        text-shadow: 0 0 20px #ff00ff, 0 0 30px #ff00ff, 0 0 40px #ff00ff, 0 0 50px #ff00ff, 0 0 60px #ff00ff, 0 0 70px #ff00ff, 0 0 80px #ff00ff;
+    }
+    80% {
+        color: #ff0080; /* Warna pink */
+        text-shadow: 100 0 20px #ff0080, 100 0 30px #ff0080, 100 0 40px #ff0080, 0 0 50px #ff0080, 0 0 60px #ff0080, 0 0 70px #ff0080, 0 0 80px #ff0080;
+    }
+    90% {
+        color: #80ff00; /* Warna lime */
+        text-shadow: 0 0 20px #80ff00, 0 0 30px #80ff00, 0 0 40px #80ff00, 0 0 50px #80ff00, 0 0 60px #80ff00, 0 0 70px #80ff00, 0 0 80px #80ff00;
+    }
+}
